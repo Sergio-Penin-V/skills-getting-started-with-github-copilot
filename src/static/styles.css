@@ -160,20 +160,41 @@ footer {
 }
 
 /* Bulleted list with nicer spacing and subtle background for items */
-.participants-list {
-  list-style: disc;
-  padding-left: 20px;
-  margin: 0;
+.participants-container {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.participant-item {
-  margin-bottom: 6px;
+.participant-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 6px 10px;
-  display: inline-block;
   border-radius: 999px;
   background: linear-gradient(90deg, rgba(26,35,126,0.06), rgba(57,73,171,0.04));
   color: #0d47a1;
   font-size: 14px;
+}
+
+.participant-name {
+  display: inline-block;
+}
+
+.participant-delete {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 6px;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.participant-delete:hover {
+  color: #8e0000;
 }
 
 /* Message shown when no participants exist */
