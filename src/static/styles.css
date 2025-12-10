@@ -63,6 +63,8 @@ section h3 {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
 }
 
 .activity-card h4 {
@@ -141,4 +143,46 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+/* Participants section */
+.participants-section {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed #eee;
+}
+
+.participants-title {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #1a237e;
+  font-weight: 600;
+}
+
+/* Bulleted list with nicer spacing and subtle background for items */
+.participants-list {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.participant-item {
+  margin-bottom: 6px;
+  padding: 6px 10px;
+  display: inline-block;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(26,35,126,0.06), rgba(57,73,171,0.04));
+  color: #0d47a1;
+  font-size: 14px;
+}
+
+/* Message shown when no participants exist */
+.participants-empty {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+  background-color: #f7f9fc;
+  padding: 8px 10px;
+  border-radius: 6px;
+  display: inline-block;
 }
